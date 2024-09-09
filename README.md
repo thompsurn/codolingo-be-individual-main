@@ -32,7 +32,7 @@ Ensure you have Node.js and npm installed on your machine. You will also need Mo
 
     `MONGO_URI=mongodb://localhost:27017/codolingo`
 
-     In addition, ensure you create .env.test and .env.development file.
+     In addition, ensure you create .env.test and .env.development files.
 
 4. Configure Node Modules:
    In node_modules/tr46/index.js, declare the following at the top of the page:
