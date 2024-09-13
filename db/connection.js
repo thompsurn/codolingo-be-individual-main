@@ -8,4 +8,4 @@ require('dotenv').config({
 
 const uri = process.env.MONGO_URI
 
-module.exports = new MongoClient(uri, { useNewUrlParser: true }, { keepAlive: 1});
+module.exports = new MongoClient(uri);

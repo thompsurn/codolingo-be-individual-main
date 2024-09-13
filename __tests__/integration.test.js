@@ -6,8 +6,13 @@ const request = require("supertest");
 const users = require("../db/data/development-data/users.js");
 const endpointsFile = require("../endpoints.json");
 
-beforeEach(() => seed(data));
-afterAll(() => client.close());
+beforeEach(async () => {
+  await seed(data);
+});
+
+afterAll(async () => {
+  await client.close();
+});
 
 const db = client.db();
 
